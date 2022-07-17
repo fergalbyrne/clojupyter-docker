@@ -5,8 +5,31 @@ build a docker image to make it easy to try out the Clojupyter without having to
 itself.  The image is intended primarily for demo purposes, most people will probably want to
 install Jupyter and Clojupyter on their machine for real work.
 
+## Usage (added for this fork for M1)
 
-## Usage
+Clone this repo and build the docker images locally:
+```bash
+gh repo clone fergalbyrne/clojupyter-docker
+cd clojupyter-docker
+CLOJUPYTER_VERSION=0.3.3 make
+```
+
+Run the following command from your notebook directory:
+```bash
+path/to/clojupyter-docker run-in-docker.sh
+```
+
+The docker server will print out a message containing a URL:
+```bash
+    To access the notebook, open this file in a browser:
+        file:///home/jovyan/.local/share/jupyter/runtime/nbserver-7-open.html
+    Or copy and paste one of these URLs:
+        http://bad0eea61788:8888/?token=a54b30900f76766a2229cc148473452ca6ff9b9a6391c7dd
+     or http://127.0.0.1:8888/?token=a54b30900f76766a2229cc148473452ca6ff9b9a6391c7dd
+```
+Copy the last of these into the address bar of your browser and enjoy!
+
+## Usage (existing repo)
 
 This project is already published on Docker hub.  The absolutely simplest way to run the image is
 doing
