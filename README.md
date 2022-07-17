@@ -27,7 +27,8 @@ The docker server will print out a message containing a URL:
         http://bad0eea61788:8888/?token=a54b30900f76766a2229cc148473452ca6ff9b9a6391c7dd
      or http://127.0.0.1:8888/?token=a54b30900f76766a2229cc148473452ca6ff9b9a6391c7dd
 ```
-Copy the last of these into the address bar of your browser and enjoy!
+Copy the last of these into the address bar of your browser and enjoy! If you get weird errors,
+try replacing `http://127.0.0.1` with `http://localhost` in the URL.
 
 ## Usage (existing repo)
 
