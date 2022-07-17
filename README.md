@@ -16,7 +16,7 @@ CLOJUPYTER_VERSION=0.3.3 make
 
 Run the following command from your notebook directory:
 ```bash
-path/to/clojupyter-docker/run-in-docker.sh
+sudo path/to/clojupyter-docker/run-in-docker.sh
 ```
 
 The docker server will print out a message containing a URL:
